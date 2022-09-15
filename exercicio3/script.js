@@ -11,3 +11,23 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+//  # Exercício 3
+
+// Dado um array de produtos, onde cada produto é um objeto com nome, preço e categoria, retorne um novo array com o nome dos produtos da categoria Limpeza.
+
+
+
+
+const apenasLimpeza = produtos.filter((produt) => {
+        return produt.categoria === 'Limpeza'
+ }
+ )
+ console.log(apenasLimpeza)
+
+
+
+const apenasLimpezas = produtos.filter((produtos) => {
+return produtos.categoria === 'Limpeza'}).map((produtos) => {
+    return produtos.nome
+})
+console.log(apenasLimpezas)
